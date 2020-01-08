@@ -2,7 +2,7 @@
 using operations;
 
 
-namespace Sum
+namespace Add
 {
     public interface IAdd
     {
