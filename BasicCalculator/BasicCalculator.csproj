@@ -17,6 +17,7 @@
     <ProjectReference Include="..\Divide\Divide.csproj" />
     <ProjectReference Include="..\Multiply\Multiply.csproj" />
     <ProjectReference Include="..\operations\operations.csproj" />
+    <ProjectReference Include="..\SquareRootNumber\SquareRootNumber.csproj" />
     <ProjectReference Include="..\Square\SquaredNumber.csproj" />
     <ProjectReference Include="..\Subtract\Subtract.csproj" />
     <ProjectReference Include="..\Sum\Add.csproj" />

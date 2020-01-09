@@ -4,6 +4,9 @@ using Add;
 using Divide;
 using Multiply;
 using SquaredNumber;
+using SquareRootNumber;
+using CubeNumber;
+using Subtract;
 namespace BasicCalculator
 {
     public interface ICalculatorBasic
@@ -13,12 +16,17 @@ namespace BasicCalculator
         public dynamic Subtract(dynamic a, dynamic b);
         public dynamic Multiply(dynamic a, dynamic b);
         public dynamic Square(dynamic a);
+        public dynamic Cubed(dynamic a);
+        public dynamic Root(dynamic a);
     }
-    public class Calculator : IAdd, IDivide,IMultiply
+    public class Calculator : IAdd, IDivide,IMultiply,ISquareNumber,ICube,ISquareRoot,ISubtract
     {
         Adding add = new Adding();
         Dividing divide = new Dividing();
         Multiplying multiply = new Multiplying();
+        Square square = new Square();
+        Cube cube = new Cube();
+        RootNumber root = new RootNumber();
         public  dynamic result;
 
         public dynamic Add(dynamic a, dynamic b)
@@ -41,11 +49,21 @@ namespace BasicCalculator
             result = Multiplication.Multiply(a, b);
             return result;
         }
-public int Square(int a)
+public dynamic SquaredNumber(dynamic a)
         {
-
+            result = Square.Squared(a);
+            return result;
         }
 
-
+        public dynamic CubedNumber(dynamic a)
+        {
+            result = Cube.cubed(a);
+            return result;
+        }
+        public dynamic Root(dynamic a)
+        {
+            result = SquareRoot.Root(a);
+            return result;
+        }
     }
 }
