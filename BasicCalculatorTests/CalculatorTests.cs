@@ -73,14 +73,25 @@ namespace BasicCalculator.Tests
 
         }
         [TestMethod()]
+        public void SquaredNumberTest()
+        {
+            Calculator calculator = new Calculator();
+
+            int c = calculator.SquaredNumber(7);
+
+            Assert.AreEqual(49, c);
+            Assert.AreEqual(49, calculator.result);
+
+        }
+        [TestMethod()]
         public void CubeTest()
         {
             Calculator calculator = new Calculator();
 
-            int c = calculator.c(10, 10);
+            int c = calculator.Cubed(2);
 
-            Assert.AreEqual(100, c);
-            Assert.AreEqual(100, calculator.result);
+            Assert.AreEqual(6, c);
+            Assert.AreEqual(6, calculator.result);
 
         }
 

@@ -9,19 +9,19 @@ namespace operations.Tests
     [TestClass()]
     public class SquareRootTests
     {
-        //private readonly int a = 9;
         private readonly double b = 64.0;
-        
-        
-        //[TestMethod()]
-        //public void rootIntTest()
-        //{
-        //    Assert.AreEqual(3, SquareRoot.Root());
-        //}
+        private readonly int a = 9;
         [TestMethod()]
-        public void rootDoubleTest()
+        public void RootTest()
+        {
+            Assert.AreEqual(3, SquareRoot.Root(a));
+        }
+        [TestMethod()]
+        public void RootDoubleTest()
         {
             Assert.AreEqual(8.0, SquareRoot.Root(b));
         }
+
+
     }
 }
