@@ -88,13 +88,24 @@ namespace BasicCalculator.Tests
         {
             Calculator calculator = new Calculator();
 
-            int c = calculator.Cubed(2);
+            int c = calculator.CubedNumber(5);
 
-            Assert.AreEqual(6, c);
-            Assert.AreEqual(6, calculator.result);
+            Assert.AreEqual(125, c);
+            Assert.AreEqual(125, calculator.result);
 
         }
 
+        [TestMethod()]
+        public void RootTest()
+        {
+            Calculator calculator = new Calculator();
+
+            int c = calculator.Root(9);
+
+            Assert.AreEqual(3, c);
+            Assert.AreEqual(3, calculator.result);
+
+        }
         //[TestMethod()]
         //public void DivideIntDoubleTest()
         //{
