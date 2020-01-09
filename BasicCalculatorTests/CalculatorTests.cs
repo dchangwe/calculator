@@ -25,6 +25,19 @@ namespace BasicCalculator.Tests
 
             
         }
+        [TestMethod()]
+        public void AddIntDoubleTest()
+        {
+            Calculator calculator = new Calculator();
+            int a = 1;
+            double b = 2.02;
+            double c = calculator.Add(a, b);
+
+            Assert.AreEqual(3.02, c);
+            Assert.AreEqual(3.02, calculator.result);
+
+
+        }
 
         [TestMethod()]
         public void DivideTest()
@@ -37,6 +50,54 @@ namespace BasicCalculator.Tests
             Assert.AreEqual(3, calculator.result);
            
         }
+        [TestMethod()]
+        public void SubtractTest()
+        {
+            Calculator calculator = new Calculator();
+
+            int c = calculator.Subtract(15, 5);
+
+            Assert.AreEqual(10, c);
+            Assert.AreEqual(10, calculator.result);
+
+        }
+        [TestMethod()]
+        public void MultiplyTest()
+        {
+            Calculator calculator = new Calculator();
+
+            int c = calculator.Multiply(10, 10);
+
+            Assert.AreEqual(100, c);
+            Assert.AreEqual(100, calculator.result);
+
+        }
+        [TestMethod()]
+        public void CubeTest()
+        {
+            Calculator calculator = new Calculator();
+
+            int c = calculator.c(10, 10);
+
+            Assert.AreEqual(100, c);
+            Assert.AreEqual(100, calculator.result);
+
+        }
+
+        //[TestMethod()]
+        //public void DivideIntDoubleTest()
+        //{
+        //    Calculator calculator = new Calculator();
+        //    int a = 10;
+        //    double b = 5.02;
+        //    double c = calculator.Add(a, b);
+
+        //    Assert.AreEqual(1.9920, c);
+        //    Assert.AreEqual(1.9920, calculator.result);
+
+
+        //}
+
         [TestMethod()]
         public void QuoIntDivideZeroTest()
         {

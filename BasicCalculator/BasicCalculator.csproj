@@ -2,10 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationAttribute>false</GenerateAssemblyInformationAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cube\CubeNumber.csproj" />
+    <ProjectReference Include="..\Divide\Divide.csproj" />
+    <ProjectReference Include="..\Multiply\Multiply.csproj" />
     <ProjectReference Include="..\operations\operations.csproj" />
+    <ProjectReference Include="..\Square\SquaredNumber.csproj" />
+    <ProjectReference Include="..\Subtract\Subtract.csproj" />
+    <ProjectReference Include="..\Sum\Add.csproj" />
   </ItemGroup>
 
 </Project>

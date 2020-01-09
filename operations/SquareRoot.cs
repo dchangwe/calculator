@@ -7,11 +7,17 @@ namespace operations
   public  class SquareRoot
     {
         
-        public static double Root()
+        public static double Root(double b)
         {
-            double b = Math.Sqrt(64.0);
-            return b;
+             double c = Math.Sqrt(b);
+            return c;
         }
         
+        public static int Root(int a)
+        {
+            double b = Math.Sqrt(a);
+            int c = Convert.ToInt32(b);
+            return c;
+        }
     }
 }
