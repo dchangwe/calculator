@@ -8,6 +8,7 @@ namespace StatisticsMean
 
         public dynamic Mean(dynamic a)
         {
+            
             result = StatsOperations.StatisticsMean.Mean(a);
             return result;
         }
