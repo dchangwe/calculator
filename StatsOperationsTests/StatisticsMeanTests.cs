@@ -10,12 +10,20 @@ namespace StatsOperations.Tests
     public class StatisticsMeanTests
     {
         [TestMethod()]
-        public void MeanTest()
+        public void MeanIntTest()
         {
             int[] values = {10,20,30};
             var mean = StatisticsMean.Mean(values);
             Assert.AreEqual(20, mean);
             
+        }
+        [TestMethod()]
+        public void MeanDoubleTest()
+        {
+            double[] values = { 2.0,3.0,4.0};
+            var mean = StatisticsMean.Mean(values);
+            Assert.AreEqual(3, mean);
+
         }
     }
 }

@@ -17,5 +17,14 @@ namespace StatsOperations.Tests
             Assert.AreEqual(5, Helpers.Rounding.RoundFiveDecimals(variance));
             
         }
+        [TestMethod()]
+        public void VarianceDoubleTest()
+        {
+            double[] values = { 2.0,3.0,4.0 };
+            var variance = StatsVariance.Variance(values);
+            Assert.AreEqual(0.66667, Helpers.Rounding.RoundFiveDecimals(variance));
+
+        }
+
     }
 }
