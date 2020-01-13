@@ -9,16 +9,7 @@ using CubeNumber;
 using Subtract;
 namespace BasicCalculator
 {
-    public interface ICalculatorBasic
-    {
-        public dynamic Add(dynamic a, dynamic b);
-        public dynamic Divide(dynamic a, dynamic b);
-        public dynamic Subtract(dynamic a, dynamic b);
-        public dynamic Multiply(dynamic a, dynamic b);
-        public dynamic Square(dynamic a);
-        public dynamic Cubed(dynamic a);
-        public dynamic Root(dynamic a);
-    }
+   
     public class Calculator : IAdd, IDivide,IMultiply,ISquareNumber,ICube,ISquareRoot,ISubtract
     {
         Adding add = new Adding();
@@ -27,42 +18,43 @@ namespace BasicCalculator
         Square square = new Square();
         Cube cube = new Cube();
         RootNumber root = new RootNumber();
+        Subtracting subtract = new Subtracting();
         public  dynamic result;
 
         public dynamic Add(dynamic a, dynamic b)
         {
-            result = addition.Sum(a, b);
+            result = add.Add(a, b);
             return result;
         }
         public dynamic Divide(dynamic a, dynamic b)
         {
-            result = Division.Divide(a, b);
+            result = divide.Divide(a, b);
             return result;
         }
         public dynamic Subtract(dynamic a, dynamic b)
         {
-            result = Subtraction.Subtract(a, b);
+            result = subtract.Subtract (a, b);
             return result;
         }
         public dynamic Multiply(dynamic a, dynamic b)
         {
-            result = Multiplication.Multiply(a, b);
+            result = multiply.Multiply(a, b);
             return result;
         }
 public dynamic SquaredNumber(dynamic a)
         {
-            result = Square.Squared(a);
+            result = square.SquaredNumber(a);
             return result;
         }
 
-        public dynamic CubedNumber(dynamic a)
+        public dynamic Cubed(dynamic a)
         {
-            result = Cube.cubed(a);
+            result = cube.Cubed(a);
             return result;
         }
         public dynamic Root(dynamic a)
         {
-            result = SquareRoot.Root(a);
+            result = root.Root(a);
             return result;
         }
     }
