@@ -17,5 +17,13 @@ namespace StatsOperations.Tests
             Assert.AreEqual(1.41421, Helpers.Rounding.RoundFiveDecimals(standDev));
             
         }
+        [TestMethod()]
+        public void StandardDevDoubleTest()
+        {
+            double[] values = { 2.0,3.0,4.0};
+            var standDev = StatsStandardDev.StandardDev(values);
+            Assert.AreEqual(0.81650, Helpers.Rounding.RoundFiveDecimals(standDev));
+
+        }
     }
 }
