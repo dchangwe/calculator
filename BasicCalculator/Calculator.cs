@@ -15,8 +15,8 @@ namespace BasicCalculator
         Adding add = new Adding();
         Dividing divide = new Dividing();
         Multiplying multiply = new Multiplying();
-        Square square = new Square();
-        Cube cube = new Cube();
+        Squared square = new Squared();
+        Cubed cube = new Cubed();
         RootNumber root = new RootNumber();
         Subtracting subtract = new Subtracting();
         public  dynamic result;
@@ -47,9 +47,9 @@ public dynamic SquaredNumber(dynamic a)
             return result;
         }
 
-        public dynamic Cubed(dynamic a)
+        public dynamic CubedNumber(dynamic a)
         {
-            result = cube.Cubed(a);
+            result = cube.CubedNumber(a);
             return result;
         }
         public dynamic Root(dynamic a)

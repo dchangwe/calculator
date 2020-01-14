@@ -69,17 +69,17 @@ namespace BasicCalculator.Tests
 
         }
         [TestMethod()]
-        public void CubeTest()
+        public void CubeIntTest()
         {
             int x = a * a * a;
-            int y = calculator.Cubed(a);
+            int y = calculator.CubedNumber(a);
             Assert.AreEqual(x, y);
             
 
         }
 
         [TestMethod()]
-        public void RootTest()
+        public void RootIntTest()
         {
             
             Assert.AreEqual(7, calculator.Root(f));
@@ -131,7 +131,7 @@ namespace BasicCalculator.Tests
         public void CubeDoubleTest()
         {
             double x = e * e * e;
-            double z = calculator.Cubed(e);
+            double z = calculator.CubedNumber(e);
             Assert.AreEqual(x, z);
         }
 
