@@ -3,7 +3,7 @@ using BasicCalculator;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using operations;
+
 
 namespace BasicCalculator.Tests
 {
@@ -18,7 +18,7 @@ namespace BasicCalculator.Tests
         private readonly int f = 49;
         Calculator calculator = new Calculator();
         [TestMethod()]
-        public void AddTest()
+        public void AddIntTest()
         {
 
             Assert.AreEqual(15, calculator.Add(a, b));
@@ -26,19 +26,7 @@ namespace BasicCalculator.Tests
 
             
         }
-        [TestMethod()]
-        public void AddIntDoubleTest()
-        {
-            Calculator calculator = new Calculator();
-            int a = 1;
-            double b = 2.02;
-            double c = calculator.Add(a, b);
-
-            Assert.AreEqual(3.02, c);
-            Assert.AreEqual(3.02, calculator.result);
-
-
-        }
+       
 
         [TestMethod()]
         public void DivideIntTest()
@@ -148,7 +136,7 @@ namespace BasicCalculator.Tests
         [TestMethod()]
         public void QuoIntDivideZeroTest()
         {
-            Assert.ThrowsException<DivideByZeroException>(() => Division.Divide(a, c));
+            Assert.ThrowsException<DivideByZeroException>(() => calculator.Divide(a, c));
         }
 
        
