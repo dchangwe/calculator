@@ -11,7 +11,7 @@ namespace StatsOperations
         {
             double mean = StatisticsMean.Mean(values);
             double standDev = StatsStandardDev.StandardDev(values);
-            double zScore = Division.Divide(Subtraction.Subtract(score, mean), standDev);
+            double zScore = Division.Quotient(Subtraction.Subtract(score, mean), standDev);
             return zScore;
         }
     }

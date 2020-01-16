@@ -14,8 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BasicCalculator\BasicCalculator.csproj" />
-    <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    <ProjectReference Include="..\StatisticsMean\StatisticsMean.csproj" />
   </ItemGroup>
 
 </Project>

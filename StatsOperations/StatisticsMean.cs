@@ -9,7 +9,7 @@ namespace StatsOperations
         {
             var sum = operations.addition.Sum(values);
             var valueCount = Helpers.Arrays.Length(values);
-            var result = operations.Division.Divide(sum, valueCount);
+            var result = Division.Quotient(sum, valueCount);
             return result;
         }
     }
