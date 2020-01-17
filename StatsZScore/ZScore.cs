@@ -9,7 +9,7 @@ namespace StatisticsZScore
 
         public double StatZScore(dynamic score, dynamic values)
         {
-            result = StatsOperations.StatsZScore.StatZScore(score,values);
+            result =StatsZScore.StatZScore(score,values);
             return result;
 
         }

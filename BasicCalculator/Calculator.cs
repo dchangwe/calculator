@@ -26,9 +26,9 @@ namespace BasicCalculator
             result = add.Add(a, b);
             return result;
         }
-        public dynamic Divide(dynamic a, dynamic b)
+        public dynamic Quotient(dynamic a, dynamic b)
         {
-            result = divide.Divide(a, b);
+            result = divide.Quotient(a, b);
             return result;
         }
         public dynamic Subtract(dynamic a, dynamic b)

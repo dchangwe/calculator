@@ -1,4 +1,5 @@
 ﻿using System;
+using StatsOperations;
 
 namespace StatisticsMean
 {
@@ -9,7 +10,7 @@ namespace StatisticsMean
         public dynamic Mean(dynamic a)
         {
             
-            result = StatsOperations.StatisticsMean.Mean(a);
+            result =StatisticMean.Mean(a);
             return result;
         }
     }

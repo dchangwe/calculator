@@ -13,9 +13,9 @@ namespace BasicCalculator.Tests
         private readonly int a = 10;
         private readonly int b = 5;
         private readonly int c = 0;
-        private readonly double d = 7.5;
-        private readonly double e = 3.4;
-        private readonly int f = 49;
+        private readonly double d = 9.0;
+        private readonly double e = 3.0;
+        private readonly int g = 49;
         Calculator calculator = new Calculator();
         [TestMethod()]
         public void AddIntTest()
@@ -31,7 +31,7 @@ namespace BasicCalculator.Tests
         [TestMethod()]
         public void DivideIntTest()
         { 
-            Assert.AreEqual(2, calculator.Divide(a, b));
+            Assert.AreEqual(2, calculator.Quotient(a, b));
               
         }
         [TestMethod()]
@@ -70,7 +70,7 @@ namespace BasicCalculator.Tests
         public void RootIntTest()
         {
             
-            Assert.AreEqual(7, calculator.Root(f));
+            Assert.AreEqual(7, calculator.Root(g));
             
 
         }
@@ -79,14 +79,14 @@ namespace BasicCalculator.Tests
         public void AddDoubleTest()
         {
 
-            Assert.AreEqual(10.9, calculator.Add(d,e));
+            Assert.AreEqual(12, calculator.Add(d,e));
  }
 
         [TestMethod()]
         public void SubtractDoubleTest()
         {
 
-            Assert.AreEqual(4.1, calculator.Subtract(d,e));
+            Assert.AreEqual(6.0, calculator.Subtract(d,e));
 
 
         }
@@ -95,14 +95,16 @@ namespace BasicCalculator.Tests
         public void MultiplyDoubleTest()
         {
 
-            Assert.AreEqual(25.5, calculator.Multiply(d,e));
- }
+            Assert.AreEqual(27, calculator.Multiply(d,e));
+            
+        }
 
         [TestMethod()]
         public void DivideDoubleTest()
         {
 
-            Assert.AreEqual(2.20588, calculator.Divide(d,e));
+            Assert.AreEqual(3, calculator.Quotient(d,e));
+            
 
 
         }
@@ -128,7 +130,7 @@ namespace BasicCalculator.Tests
         public void RootDoubleTest()
         {
 
-            Assert.AreEqual(1.843901, calculator.Root(e));
+            Assert.AreEqual(3, calculator.Root(d));
 
 
         }
@@ -136,7 +138,7 @@ namespace BasicCalculator.Tests
         [TestMethod()]
         public void QuoIntDivideZeroTest()
         {
-            Assert.ThrowsException<DivideByZeroException>(() => calculator.Divide(a, c));
+            Assert.ThrowsException<DivideByZeroException>(() => calculator.Quotient(a, c));
         }
 
        

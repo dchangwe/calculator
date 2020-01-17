@@ -16,12 +16,12 @@ namespace operations.Tests
         [TestMethod()]
         public void DivideTest()
         {
-            Assert.AreEqual(6, Division.Divide(a, b));
+            Assert.AreEqual(6, Division.Quotient(a, b));
         }
         [TestMethod()]
         public void DivideDoubleTest()
         {
-            Assert.AreEqual(3.06, Division.Divide(c, d));
+            Assert.AreEqual(3.06, Division.Quotient(c, d));
         }
     }
 }

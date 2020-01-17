@@ -3,12 +3,12 @@ using StatsOperations;
 
 namespace StatisticsVariance
 {
-    public class FindVariance 
+    public class FindVariance : IFindVariance
     {
         public static dynamic result;
         public double Variance(dynamic arrayA)
         {
-            result = StatsOperations.StatsVariance.Variance(arrayA);
+            result = StatsVariance.Variance(arrayA);
             return result;
         }
     }

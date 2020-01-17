@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\operations\operations.csproj" />
+    <ProjectReference Include="..\..\CalculatorProject1\BasicOperations\BasicOperations.csproj" />
+    
   </ItemGroup>
 
 </Project>
