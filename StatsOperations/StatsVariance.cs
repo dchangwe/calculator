@@ -9,15 +9,18 @@ namespace StatsOperations
     {
 public static double Variance(dynamic values)
         {
-            double mean = StatisticsMean.Mean(values);
-            double[] squareDeviation = new double[Helpers.Arrays.Length(values)];
-            int i = 0;
-            foreach( int a in values)
+            double mean = StatisticMean.Mean(values);
+            double difference = 0;
+            double variance = 0;
+            foreach (int a in values)
             {
-                squareDeviation[i] = Square.Squared(Subtraction.Subtract(a, mean));
-                i++;
+                difference = Subtraction.Subtract((int)mean, a);
+                difference = Math.Pow(difference, 2);
+                variance = addition.Sum(variance, (int)difference);
+
             }
-            double variance = StatisticsMean.Mean(squareDeviation);
+            int ValueCount = Helpers.Arrays.Length(values);
+            variance = Division.Quotient(variance, ValueCount);
             return variance;
         }
     }

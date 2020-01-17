@@ -9,7 +9,7 @@ namespace StatsOperations
     {
         public static double StatZScore(dynamic score, dynamic values)
         {
-            double mean = StatisticsMean.Mean(values);
+            double mean = StatisticMean.Mean(values);
             double standDev = StatsStandardDev.StandardDev(values);
             double zScore = Division.Quotient(Subtraction.Subtract(score, mean), standDev);
             return zScore;
