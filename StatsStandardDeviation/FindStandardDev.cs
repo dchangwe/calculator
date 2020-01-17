@@ -8,7 +8,7 @@ namespace StatsStandardDeviation
         public static dynamic result;
         public double StandardDev(dynamic arrayA)
         {
-            result = StatsOperations.StatsStandardDev.StandardDev(arrayA);
+            result = StatsStandardDev.StandardDev(arrayA);
             return result;
         }
     }
